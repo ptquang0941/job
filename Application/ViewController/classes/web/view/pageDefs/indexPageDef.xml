@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="indexPageDef"
+                Package="web.view.pageDefs">
+  <parameters/>
+  <executables>
+    <iterator Binds="CustomersView1" RangeSize="25" DataControl="AppModuleDataControl" id="CustomersView1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="CustomersView1Iterator" id="CustomersView1">
+      <nodeDefinition DefName="web.model.CustomersView" Name="CustomersView10">
+        <AttrNames>
+          <Item Value="CustomerId"/>
+          <Item Value="Name"/>
+          <Item Value="Address"/>
+          <Item Value="Website"/>
+          <Item Value="CreditLimit"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
