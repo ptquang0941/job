@@ -11,7 +11,7 @@
     <Attr Name="_DTExpressionTypeChecking" Value="true"/>
     <Attr Name="_jbo.TypeMapEntries" Value="Java"/>
     <Attr Name="_jprName" Value="../../../Model.jpr"/>
-    <Attr Name="_NamedConnection" Value="OracleEX"/>
+    <Attr Name="_NamedConnection" Value="Connection1"/>
     <Attr Name="_useAnsiJoinSyntax" Value="true"/>
     <Attr Name="_appModuleNames0" Value="web.model.AppModule"/>
   </DesignTime>

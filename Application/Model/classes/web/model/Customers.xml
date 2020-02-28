@@ -66,10 +66,10 @@
     ColumnType="NUMBER"
     TableName="CUSTOMERS"/>
   <Key
-    Name="SysC007331"
+    Name="SysC0011580"
     PrimaryKey="true">
     <DesignTime>
-      <Attr Name="_DBObjectName" Value="SYS_C007331"/>
+      <Attr Name="_DBObjectName" Value="SYS_C0011580"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="web.model.Customers.CustomerId"/>

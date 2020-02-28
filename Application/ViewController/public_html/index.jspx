@@ -4,122 +4,144 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <f:view>
         <af:document title="index.jspx" id="d1">
-            <af:messages id="m1"/>
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Start Bootstrap</a>
+                    <a class="navbar-brand" href="#">Navbar</a>
                      
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
+                    <div class="collapse navbar-collapse" id="navbarColor03">
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home
+                                <a class="nav-link" href="#"><af:outputText value="#{res.home}" id="home"/>
                                     <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#"><af:outputText value="#{res.introduction}" id="introduction"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="#"><af:outputText value="#{res.services}" id="services"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#"><af:outputText value="#{res.contact}" id="contact"/></a>
                             </li>
                         </ul>
+                        <div styleClass="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                        </div>
                     </div>
                 </div>
             </nav>
             <!-- Page Content -->
-            <af:form id="f1">
-                <div id="page_content" class="container">
-                    <!-- Jumbotron Header -->
-                    <header class="jumbotron my-4">
-                        <h1 class="display-3">
-                             Welcome!
-                        </h1>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
-                            possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae
-                            fugiat numquam repellat.
-                        </p>
-                        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
-                    </header><!-- Page Features -->
-                    <div class="row text-center">
-                    
-                        <af:iterator id="i1" value="#{bindings.CustomersView1.collectionModel}" var="item">
-                            <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="http://placehold.it/500x325" alt="tets"/>
-                                <div class="card-body">
-                                    <h4 class="card-title"><af:outputLabel value="#{item.Address}" id="ol1"></af:outputLabel></h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-                                                         esse necessitatibus neque.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                                </div>
-                            </div>
+            <div class="container" id="page-content">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item icon-job">
+                                <af:outputText value=" #{res.job}" id="job"/></a>
+                             
+                            <a href="#" class="list-group-item icon-house"> 
+                                <af:outputText value=" #{res.housing}" id="house"/></a>
+                             
+                            <a href="#" class="list-group-item icon-bus"> 
+                                <af:outputText value=" #{res.bus}" id="bus"/></a>
+                             
+                            <a href="#" class="list-group-item icon-rent-house"> 
+                                <af:outputText value=" #{res.renthouse}" id="renthouse"/></a>
+                             
+                            <a href="#" class="list-group-item icon-rent-office"> 
+                                <af:outputText value=" #{res.rentoffice}" id="rentoffice"/></a>
+                             
+                            <a href="#" class="list-group-item icon-digital-device"> 
+                                <af:outputText value=" #{res.digitaldevice}" id="digitaldevice"/></a>
+                             
+                            <a href="#" class="list-group-item icon-juice"> 
+                                <af:outputText value=" #{res.juice}" id="juice"/></a>
+                             
+                            <a href="#" class="list-group-item icon-exterior"> 
+                                <af:outputText value=" #{res.exterior}" id="exterior"/></a>
+                             
+                            <a href="#" class="list-group-item icon-fashion"> 
+                                <af:outputText value=" #{res.fashion}" id="fashion"/></a>
+                             
+                            <a href="#" class="list-group-item icon-regional-specialties"> 
+                                <af:outputText value=" #{res.regionalSpecialties}" id="regionalSpecialties"/></a>
+                             
+                            <a href="#" class="list-group-item icon-tourist-attraction">
+                                <af:outputText value=" #{res.touristAttraction}" id="touristAttraction"/></a>
                         </div>
-                        </af:iterator>
-                        <!--<div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="http://placehold.it/500x325" alt="tets"/>
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-                                                         esse necessitatibus neque.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="http://placehold.it/500x325" alt="tets"/>
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-                                                         magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="http://placehold.it/500x325" alt="tets"/>
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-                                                         esse necessitatibus neque.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="http://placehold.it/500x325" alt="tets"/>
-                                <div class="card-body">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-                                                         magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                                </div>
-                            </div>
-                        </div>-->
                     </div>
-                    <!-- /.row -->
+                    <!-- /.col-lg-3 -->
+                    <div class="col-lg-9">
+                        <div class="card mt-4">
+                            <img class="card-img-top img-fluid"
+                                 src="https://2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Tech-Pro-Technologist-Recruiter-Dos-Donts-Recruiting-Job-Offer-Dice-1024x655.png"
+                                 alt="img">
+                                <div class="card-body">
+                                    <?audit suppress oracle.ide.xml.validation-error?>
+                                    <h3 class="card-title">Phần này ẩn hiện khi cần thiết</h3>
+                                    <h6>Tin cố định</h6>
+                                    <p class="card-text">dolor sit amet, consectetur adipisicing elit.
+                                                         Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta.
+                                                         Totam id dolores, sint aperiam sequi pariatur praesentium animi
+                                                         perspiciatis molestias iure, ducimus!</p>
+                                </div>
+                            </img>
+                        </div>
+                        
+                        <div class="card mb-3">
+                          <div class="row no-gutters">
+                            <div class="col-md-3">
+                              <img src="resources/images/logocompany.png" class="card-img" alt="img" />
+                            </div>
+                            <div class="col-md-9">
+                              <div class="card-body">
+                                <h5 class="card-title">Codix Co., Ltd</h5>
+                                <p class="card-text">4th Floor, Etown 3 building, 364 Cong Hoa Street, Ward 13, Tan Binh district, HCMC.</p>
+                                
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">1. Phụ Trách Dự Án Phát Triển Sản Phẩm Điện Tử Viễn Thông Tin Học</li>
+                                  <li class="list-group-item">2. 5 Senior PHP Developers - Salary Up To $2000</li>
+                                  <li class="list-group-item">3. Sharepoint Developer (all Levels)</li>
+                                  <li class="list-group-item">4. 5 Senior Java Developers - Salary Up To $2000</li>
+                                  <li class="list-group-item">5. 5 Senior .NET Developers - Salary Up To $2000</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                          <div class="row no-gutters">
+                            <div class="col-md-3">
+                              <img src="resources/images/logocompany1.png" class="card-img" alt="img" />
+                            </div>
+                            <div class="col-md-9">
+                              <div class="card-body">
+                                <h5 class="card-title">Công Ty TNHH Tư Vấn Và Phát Triển Phần Mềm LARION</h5>
+                                <p class="card-text">Khu Công Nghiệp Trà Nóc I, P.Trà Nóc, Quận Bình Thủy, TP Cần Thơ.</p>
+                                
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">1. Phụ Trách Dự Án Phát Triển Sản Phẩm Điện Tử Viễn Thông Tin Học</li>
+                                  <li class="list-group-item">2. 5 Senior PHP Developers - Salary Up To $2000</li>
+                                  <li class="list-group-item">3. Sharepoint Developer (all Levels)</li>
+                                  <li class="list-group-item">4. 5 Senior Java Developers - Salary Up To $2000</li>
+                                  <li class="list-group-item">5. 5 Senior .NET Developers - Salary Up To $2000</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /.col-lg-9 -->
                 </div>
-            </af:form>
+            </div>
+            <af:resource type="javascript" source="${resource['js:jquery.min.js']}"></af:resource>
+            <af:resource type="javascript" source="${resource['js:bootstrap.bundle.js']}"></af:resource>
         </af:document>
     </f:view>
 </jsp:root>

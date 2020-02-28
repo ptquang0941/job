@@ -3,6 +3,7 @@
                 Package="web.view.pageDefs">
   <parameters/>
   <executables>
+    <variableIterator id="variables"/>
     <iterator Binds="CustomersView1" RangeSize="25" DataControl="AppModuleDataControl" id="CustomersView1Iterator"/>
   </executables>
   <bindings>
