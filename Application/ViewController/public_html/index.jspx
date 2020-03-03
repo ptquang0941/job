@@ -4,8 +4,59 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <f:view>
         <af:document title="index.jspx" id="d1">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#">Navbar</a>
+                     
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button><!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="collapsenav">
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle icon-list" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false" style="cursor: pointer;"><af:outputText value=" #{res.services}" id="services"/></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item icon-job" href="#"><af:outputText value=" #{res.job}" id="job"/></a>
+                                    <a class="dropdown-item icon-house" href="#"><af:outputText value=" #{res.housing}" id="house"/></a>
+                                    <a class="dropdown-item icon-bus" href="#"><af:outputText value=" #{res.bus}" id="bus"/></a>
+                                    <a class="dropdown-item icon-rent-house" href="#"><af:outputText value=" #{res.renthouse}" id="renthouse"/></a>
+                                    <a class="dropdown-item icon-rent-office" href="#"><af:outputText value=" #{res.rentoffice}" id="rentoffice"/></a>
+                                    <a class="dropdown-item icon-digital-device" href="#"><af:outputText value=" #{res.digitaldevice}" id="digitaldevice"/></a>
+                                    <a class="dropdown-item icon-juice" href="#"><af:outputText value=" #{res.juice}" id="juice"/></a>
+                                    <a class="dropdown-item icon-exterior" href="#"><af:outputText value=" #{res.exterior}" id="exterior"/></a>
+                                    <a class="dropdown-item icon-fashion" href="#"><af:outputText value=" #{res.fashion}" id="fashion"/></a>
+                                    <a class="dropdown-item icon-regional-specialties" href="#"><af:outputText value=" #{res.regionalSpecialties}" id="regionalSpecialties"/></a>
+                                    <a class="dropdown-item icon-tourist-attraction" href="#"><af:outputText value=" #{res.touristAttraction}" id="touristAttraction"/></a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link icon-news" href="#"><af:outputText value=" #{res.post}" id="post"/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link icon-contact" href="#"><af:outputText value=" #{res.contact}" id="contact"/></a>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                        <form class="form-inline">
+                            <div class="md-form my-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm"
+                                       aria-label="Search"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Collapsible content -->
+            </nav>
+            <!--/.Navbar-->
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!--<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="#">Navbar</a>
                      
@@ -16,7 +67,7 @@
                     <div class="collapse navbar-collapse" id="navbarColor03">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#"><af:outputText value="#{res.home}" id="home"/>
+                                <a class="nav-link" href="page/jobdetail.jspx"><af:outputText value="#{res.home}" id="home"/>
                                     <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -34,11 +85,11 @@
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav>-->
             <!-- Page Content -->
             <div class="container" id="page-content">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <!--<div class="col-lg-3">
                         <div class="list-group">
                             <a href="#" class="list-group-item icon-job">
                                 <af:outputText value=" #{res.job}" id="job"/></a>
@@ -73,74 +124,75 @@
                             <a href="#" class="list-group-item icon-tourist-attraction">
                                 <af:outputText value=" #{res.touristAttraction}" id="touristAttraction"/></a>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- /.col-lg-3 -->
-                    <div class="col-lg-9">
+                    <div class="col-lg-12">
                         <div class="card mt-4">
                             <img class="card-img-top img-fluid"
                                  src="https://2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Tech-Pro-Technologist-Recruiter-Dos-Donts-Recruiting-Job-Offer-Dice-1024x655.png"
                                  alt="img">
                                 <div class="card-body">
                                     <?audit suppress oracle.ide.xml.validation-error?>
-                                    <h3 class="card-title">Phần này ẩn hiện khi cần thiết</h3>
+                                     
+                                    <h3 class="card-title">Phần n&#224;y ẩn hiện khi cần thiết</h3>
+                                     
                                     <h6>Tin cố định</h6>
-                                    <p class="card-text">dolor sit amet, consectetur adipisicing elit.
-                                                         Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta.
-                                                         Totam id dolores, sint aperiam sequi pariatur praesentium animi
+                                    <p class="card-text">dolor sit amet, consectetur adipisicing elit. Sapiente dicta
+                                                         fugit fugiat hic aliquam itaque facere, soluta. Totam id
+                                                         dolores, sint aperiam sequi pariatur praesentium animi
                                                          perspiciatis molestias iure, ducimus!</p>
                                 </div>
                             </img>
                         </div>
-                        
                         <div class="card mb-3">
-                          <div class="row no-gutters">
-                            <div class="col-md-3">
-                              <img src="resources/images/logocompany.png" class="card-img" alt="img" />
+                            <div class="row no-gutters">
+                                <div class="col-md-3">
+                                    <img src="resources/images/logocompany.png" class="card-img" alt="img"/>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Codix Co., Ltd</h5>
+                                        <p class="card-text">4th Floor, Etown 3 building, 364 Cong Hoa Street, Ward 13,
+                                                             Tan Binh district, HCMC.</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">1. Phụ Tr&#225;ch Dự &#193;n Ph&#225;t Triển Sản
+                                                                        Phẩm Điện Tử Viễn Th&#244;ng Tin Học</li>
+                                            <li class="list-group-item">2. 5 Senior PHP Developers - Salary Up To $2000</li>
+                                            <li class="list-group-item">3. Sharepoint Developer (all Levels)</li>
+                                            <li class="list-group-item">4. 5 Senior Java Developers - Salary Up To $2000</li>
+                                            <li class="list-group-item">5. 5 Senior .NET Developers - Salary Up To $2000</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-9">
-                              <div class="card-body">
-                                <h5 class="card-title">Codix Co., Ltd</h5>
-                                <p class="card-text">4th Floor, Etown 3 building, 364 Cong Hoa Street, Ward 13, Tan Binh district, HCMC.</p>
-                                
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">1. Phụ Trách Dự Án Phát Triển Sản Phẩm Điện Tử Viễn Thông Tin Học</li>
-                                  <li class="list-group-item">2. 5 Senior PHP Developers - Salary Up To $2000</li>
-                                  <li class="list-group-item">3. Sharepoint Developer (all Levels)</li>
-                                  <li class="list-group-item">4. 5 Senior Java Developers - Salary Up To $2000</li>
-                                  <li class="list-group-item">5. 5 Senior .NET Developers - Salary Up To $2000</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                        
                         <div class="card mb-3">
-                          <div class="row no-gutters">
-                            <div class="col-md-3">
-                              <img src="resources/images/logocompany1.png" class="card-img" alt="img" />
+                            <div class="row no-gutters">
+                                <div class="col-md-3">
+                                    <img src="resources/images/logocompany1.png" class="card-img" alt="img"/>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">C&#244;ng Ty TNHH Tư Vấn V&#224; Ph&#225;t Triển Phần Mềm
+                                                               LARION</h5>
+                                        <p class="card-text">Khu C&#244;ng Nghiệp Tr&#224; N&#243;c I, P.Tr&#224;
+                                                             N&#243;c, Quận B&#236;nh Thủy, TP Cần Thơ.</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">1. Phụ Tr&#225;ch Dự &#193;n Ph&#225;t Triển Sản
+                                                                        Phẩm Điện Tử Viễn Th&#244;ng Tin Học</li>
+                                            <li class="list-group-item">2. 5 Senior PHP Developers - Salary Up To $2000</li>
+                                            <li class="list-group-item">3. Sharepoint Developer (all Levels)</li>
+                                            <li class="list-group-item">4. 5 Senior Java Developers - Salary Up To $2000</li>
+                                            <li class="list-group-item">5. 5 Senior .NET Developers - Salary Up To $2000</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-9">
-                              <div class="card-body">
-                                <h5 class="card-title">Công Ty TNHH Tư Vấn Và Phát Triển Phần Mềm LARION</h5>
-                                <p class="card-text">Khu Công Nghiệp Trà Nóc I, P.Trà Nóc, Quận Bình Thủy, TP Cần Thơ.</p>
-                                
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">1. Phụ Trách Dự Án Phát Triển Sản Phẩm Điện Tử Viễn Thông Tin Học</li>
-                                  <li class="list-group-item">2. 5 Senior PHP Developers - Salary Up To $2000</li>
-                                  <li class="list-group-item">3. Sharepoint Developer (all Levels)</li>
-                                  <li class="list-group-item">4. 5 Senior Java Developers - Salary Up To $2000</li>
-                                  <li class="list-group-item">5. 5 Senior .NET Developers - Salary Up To $2000</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                        
                     </div>
                     <!-- /.col-lg-9 -->
                 </div>
             </div>
-
             <af:resource type="javascript" source="${resource['js:jquery.min.js']}"></af:resource>
             <af:resource type="javascript" source="${resource['js:bootstrap.bundle.js']}"></af:resource>
         </af:document>
