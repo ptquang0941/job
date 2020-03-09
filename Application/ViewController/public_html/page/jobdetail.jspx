@@ -4,7 +4,526 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <f:view>
         <af:document title="jobdetail.jspx" id="d1">
-            
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#">Navbar</a>
+                     
+                    <!-- Collapse button -->
+                     
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button><!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="collapsenav">
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle icon-list" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                   style="cursor: pointer;">
+                                    <af:outputText value=" #{res.services}" id="services"/></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item icon-job" href="#">
+                                        <af:outputText value=" #{res.job}" id="job"/></a>
+                                     
+                                    <a class="dropdown-item icon-house" href="#"> 
+                                        <af:outputText value=" #{res.housing}" id="house"/></a>
+                                     
+                                    <a class="dropdown-item icon-bus" href="#"> 
+                                        <af:outputText value=" #{res.bus}" id="bus"/></a>
+                                     
+                                    <a class="dropdown-item icon-rent-house" href="#"> 
+                                        <af:outputText value=" #{res.renthouse}" id="renthouse"/></a>
+                                     
+                                    <a class="dropdown-item icon-rent-office" href="#"> 
+                                        <af:outputText value=" #{res.rentoffice}" id="rentoffice"/></a>
+                                     
+                                    <a class="dropdown-item icon-digital-device" href="#"> 
+                                        <af:outputText value=" #{res.digitaldevice}" id="digitaldevice"/></a>
+                                     
+                                    <a class="dropdown-item icon-juice" href="#"> 
+                                        <af:outputText value=" #{res.juice}" id="juice"/></a>
+                                     
+                                    <a class="dropdown-item icon-exterior" href="#"> 
+                                        <af:outputText value=" #{res.exterior}" id="exterior"/></a>
+                                     
+                                    <a class="dropdown-item icon-fashion" href="#"> 
+                                        <af:outputText value=" #{res.fashion}" id="fashion"/></a>
+                                     
+                                    <a class="dropdown-item icon-regional-specialties" href="#"> 
+                                        <af:outputText value=" #{res.regionalSpecialties}" id="regionalSpecialties"/></a>
+                                     
+                                    <a class="dropdown-item icon-tourist-attraction" href="#">
+                                        <af:outputText value=" #{res.touristAttraction}" id="touristAttraction"/></a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link icon-news" href="page/jobdetail.jspx">
+                                    <af:outputText value=" #{res.post}" id="post"/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link icon-contact" href="#">
+                                    <af:outputText value=" #{res.contact}" id="contact"/></a>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                        <form class="form-inline">
+                            <div class="md-form my-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="T&#236;m kiếm"
+                                       aria-label="Search"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Collapsible content -->
+            </nav>
+            <!-- Masthead -->
+            <header class="masthead text-white text-center">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row"></div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="job-detail-list">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="job-detail-logo">
+                                <img src="https://eyecix.com/html/careerfy/extra-images/job-detailthree-logo.png"
+                                     alt="img"/>
+                                 
+                                <h5>
+                                    <strong>Larion Group Inc.</strong>
+                                </h5>
+                                <div class="company-rating">
+                                    <span class="careerfy-company-rating-box width-eighty"></span>
+                                </div>
+                                <small>354 Reviews</small>
+                                 
+                                <span class="job-detail-view">569889</span>
+                                <div class="careerfy-applywith-title">
+                                    <small>Thời gian kết th&#250;c</small>
+                                </div>
+                                <ul class="job-detail-apply-list">
+                                    <li>
+                                        <strong>Ng&#224;y đăng</strong>
+                                    </li>
+                                    <li>03/04/2020</li>
+                                    <li>
+                                        <strong>Ng&#224;y hết hạn</strong>
+                                    </li>
+                                    <li>20/09/2020</li>
+                                    <li>
+                                        <strong>Địa điểm</strong>
+                                    </li>
+                                    <li>H&#224; Nội</li>
+                                    <li>
+                                        <strong>Số lượng tuyển</strong>
+                                    </li>
+                                    <li>5 người</li>
+                                </ul>
+                                <ul class="job-detail-social">
+                                    <li>
+                                        <strong>Chia sẻ c&#244;ng việc:</strong>
+                                    </li>
+                                    <li>
+                                        <a href="details.jspx" class="fa-twitter">&#160;</a>
+                                    </li>
+                                    <li>
+                                        <a href="details.jspx" class="fa-facebook">&#160;</a>
+                                    </li>
+                                    <li>
+                                        <a href="details.jspx" class="fa-linkedin">&#160;</a>
+                                    </li>
+                                    <li>
+                                        <a href="details.jspx" class="fa-google-plus">&#160;</a>
+                                    </li>
+                                </ul>
+                                <div class="job-detail-link">
+                                    <a href="#">Nộp Đơn</a>
+                                </div>
+                            </div>
+                            <div class="job-detail-candidate-detail-services">
+                                <ul>
+                                    <li>
+                                        <af:icon styleClass="icon-candidate-service" id="i1"></af:icon>
+                                        <div class="job-detail-services-text">
+                                            <span>Mức lương</span>
+                                             
+                                            <small>1000$+</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <af:icon styleClass="icon-users-service" id="i2"></af:icon>
+                                        <div class="job-detail-services-text">
+                                            <span>Vị tr&#237;</span>
+                                             
+                                            <small>Quản l&#253;</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <af:icon styleClass="icon-experience-service" id="i3"></af:icon>
+                                        <div class="job-detail-services-text">
+                                            <span>Kinh nghiệm</span>
+                                             
+                                            <small>10 năm</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <af:icon styleClass="icon-gender-service" id="i4"></af:icon>
+                                        <div class="job-detail-services-text">
+                                            <span>Giới t&#237;nh</span>
+                                             
+                                            <small>Nam, Nữ</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <af:icon styleClass="icon-industry-service" id="i5"></af:icon>
+                                        <div class="job-detail-services-text">
+                                            <span>Lĩnh vực</span>
+                                             
+                                            <small>Ng&#226;n h&#224;ng</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <af:icon styleClass="icon-graduation-service" id="i6"></af:icon>
+                                        <div class="job-detail-services-text">
+                                            <span>Bằng cấp</span>
+                                             
+                                            <small>Đại học</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more-jobs">
+                                <!-- Similar job -->
+                                <div class="job-detail-similar">
+                                    <h4 class="icon-more-job">
+                                        <strong>Tuyển dụng của c&#244;ng ty</strong>
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <h6>
+                                                <strong>
+                                                    <a href="#">Nh&#226;n vi&#234;n kinh doanh</a></strong>
+                                            </h6>
+                                             
+                                            <span class="icon-maps-flag"> H&#224; Nội</span>
+                                             
+                                            <span class="icon-money"> $155K – $195K</span>
+                                             
+                                            <a href="#" class="job-detail-similar-btn">Nộp đơn</a>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                <strong>
+                                                    <a href="#">Cargo sales executive</a></strong>
+                                            </h6>
+                                             
+                                            <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                             
+                                            <span class="icon-money"> $155K – $195K</span>
+                                             
+                                            <a href="#" class="job-detail-similar-btn">Nộp đơn</a>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                <strong>
+                                                    <a href="#">Conceptual Copywriter</a></strong>
+                                            </h6>
+                                             
+                                            <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                             
+                                            <span class="icon-money"> $155K – $195K</span>
+                                             
+                                            <a href="#" class="job-detail-similar-btn">Nộp đơn</a>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                <strong>
+                                                    <a href="#">POS Campaign Manager</a></strong>
+                                            </h6>
+                                             
+                                            <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                             
+                                            <span class="icon-money"> $155K – $195K</span>
+                                             
+                                            <a href="#" class="job-detail-similar-btn">Nộp đơn</a>
+                                        </li>
+                                        <li>
+                                            <h6>
+                                                <strong>
+                                                    <a href="#">Graphic Designer Berkshire</a></strong>
+                                            </h6>
+                                             
+                                            <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                             
+                                            <span class="icon-money"> $155K – $195K</span>
+                                             
+                                            <a href="#" class="job-detail-similar-btn">Nộp đơn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end Similar job -->
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="job-detail-content">
+                                <div class="job-detail-content-section">
+                                    <h4>
+                                        <b>Nh&#226;n vi&#234;n Chăm s&#243;c kh&#225;ch h&#224;ng b&#225;n h&#224;ng qua
+                                           điện thoại</b>
+                                    </h4>
+                                     
+                                    <span>To&#224;n thời gian</span>
+                                     
+                                    <strong>C&#244;ng Ty TNHH Tư Vấn V&#224; Ph&#225;t Triển Phần Mềm LARION.
+                                        <small>Mới nhất</small></strong>
+                                </div>
+                                <div class="job-detail-content-title">
+                                    <h5>
+                                        <strong>M&#244; tả c&#244;ng việc</strong>
+                                    </h5>
+                                </div>
+                                <div class="job-detail-description">
+                                    <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
+                                       oh arrogantly vehement irresistibly fussy penguin insect additionally wow
+                                       absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
+                                       cassowary some parrot and much as goodness some froze the sullen much connected
+                                       bat wonderfully on instantaneously eel valiantly petted this along across
+                                       highhandedly much dog out the much alas evasively neutral lazy reset.</p>
+                                    <div class="job-detail-content-title">
+                                        <h5>
+                                            <strong>Y&#234;u cầu chung</strong>
+                                        </h5>
+                                    </div>
+                                    <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
+                                       oh arrogantly vehement irresistibly fussy penguin insect additionally wow
+                                       absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
+                                       cassowary some parrot and much as goodness some froze the sullen much connected
+                                       bat wonderfully on instantaneously eel valiantly petted this along across
+                                       highhandedly much dog out the much alas evasively neutral lazy reset.</p>
+                                    <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
+                                       oh arrogantly vehement irresistibly fussy penguin insect additionally wow
+                                       absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
+                                       cassowary some parrot and much as goodness some froze the sullen much connected
+                                       bat wonderfully on instantaneously eel valiantly petted this along across
+                                       highhandedly much dog out the much alas evasively neutral lazy reset.</p>
+                                    <div class="job-detail-content-title">
+                                        <h5>
+                                            <strong>C&#225;c quyền lợi</strong>
+                                        </h5>
+                                    </div>
+                                    <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
+                                       oh arrogantly vehement irresistibly fussy penguin insect additionally wow
+                                       absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
+                                       cassowary some parrot and much as goodness some froze the sullen much connected
+                                       bat wonderfully on instantaneously eel valiantly petted this along across
+                                       highhandedly much dog out the much alas evasively neutral lazy reset.</p>
+                                    <div class="job-detail-content-title">
+                                        <h5>
+                                            <strong>Kỹ năng cần thiết</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="job-detail-tags">
+                                        <a href="#">Java</a>
+                                         
+                                        <a href="#">Spring Boot</a>
+                                         
+                                        <a href="#">Oracle</a>
+                                         
+                                        <a href="#">Docker</a>
+                                         
+                                        <a href="#">SSO</a>
+                                         
+                                        <a href="#">Oauth 2</a>
+                                         
+                                        <a href="#">Spring Security</a>
+                                         
+                                        <a href="#">JPA</a>
+                                         
+                                        <a href="#">Logger</a>
+                                         
+                                        <a href="#">Postgres</a>
+                                         
+                                        <a href="#">Git</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-detail-content-title">
+                                <h4 class="icon-job-detail-content-title">
+                                    <strong>Tin tuyển dụng kh&#225;c</strong>
+                                </h4>
+                                <div class="list-group">
+                                    <div class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 careerfy-list-option">
+                                            <h6 class="mb-1">
+                                                <strong>Senior Rolling Stock Technician</strong>
+                                            </h6>
+                                        </div>
+                                        <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                         
+                                        <span class="icon-money"> $1.500 – $2.500</span>
+                                         
+                                        <span class="icon-filter"> IT Phần mềm</span>
+                                         
+                                        <span class="job-detail-feature">TO&#192;N THỜI GIAN</span>
+                                    </div>
+                                    <div class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 careerfy-list-option">
+                                            <h6 class="mb-1">
+                                                <strong>Need Senior Rolling Stock Technician</strong>
+                                            </h6>
+                                        </div>
+                                        <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                         
+                                        <span class="icon-money"> $1.500 – $2.500</span>
+                                         
+                                        <span class="icon-filter"> IT Phần mềm</span>
+                                         
+                                        <span class="job-detail-feature">TO&#192;N THỜI GIAN</span>
+                                    </div>
+                                    <div class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 careerfy-list-option">
+                                            <h6 class="mb-1">
+                                                <strong>Need Senior Rolling Stock Technician</strong>
+                                            </h6>
+                                        </div>
+                                        <span class="icon-maps-flag"> TP.Hồ Ch&#237; Minh</span>
+                                         
+                                        <span class="icon-money"> $1.500 – $2.500</span>
+                                         
+                                        <span class="icon-filter"> IT Phần mềm</span>
+                                         
+                                        <span class="job-detail-feature">TO&#192;N THỜI GIAN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="careerfy-footer" class="careerfy-footer-one">
+                <div class="container">
+                    <!-- Footer Widget -->
+                    <div class="careerfy-footer-widget">
+                        <div class="row">
+                            <aside class="widget col-md-4 widget_contact_info">
+                                <div class="widget_contact_wrap">
+                                    <a class="careerfy-footer-logo" href="">
+                                        <img src="https://eyecix.com/html/careerfy/images/footer-logo.png" alt="img" /></a>
+                                    <p>Sed consequat sapien faus quam bibendum convallis quis in nulla. Pellentesque
+                                       volutpat odio eget diam cursus semper. Sed coquat sapien faucibus quam.</p>
+                                    <a href="#" class="careerfy-classic-btn careerfy-bgcolor">Learn more</a>
+                                </div>
+                            </aside>
+                             
+                            <aside class="widget col-md-3 widget_nav_manu">
+                                <div class="footer-widget-title">
+                                    <h2>Quick Links</h2>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Shortcodes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Job Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Job Page Alternative</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Resume Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                             
+                            <aside class="widget col-md-3 widget_nav_manu">
+                                <div class="footer-widget-title">
+                                    <h2>For Candidates</h2>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Browse Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Browse Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Submit Resume</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Candidate Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Job Alerts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Bookmarks</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                             
+                            <aside class="widget col-md-2 widget_nav_manu">
+                                <div class="footer-widget-title">
+                                    <h2>For Employers</h2>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Browse Candidates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Employer Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Add Job</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Job Packages</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                    <!-- Footer Widget -->
+                    <!-- CopyRight -->
+                    <div class="careerfy-copyright">
+                        <p>
+                            Copyrights &#169; 2020 All Rights Reserved by 
+                            <a href="#" class="careerfy-color">XXXX</a>
+                        </p>
+                        <ul class="careerfy-social-network">
+                            <li>
+                                <a href="#" class="careerfy-bgcolorhover fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="careerfy-bgcolorhover fa fa-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="careerfy-bgcolorhover fa fa-dribbble"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="careerfy-bgcolorhover fa fa-linkedin"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="careerfy-bgcolorhover fa fa-instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CopyRight -->
+                </div>
+            </footer>
+            <af:resource type="javascript" source="${resource['js:jquery.min.js']}"></af:resource>
+            <af:resource type="javascript" source="${resource['js:bootstrap.bundle.js']}"></af:resource>
         </af:document>
     </f:view>
 </jsp:root>

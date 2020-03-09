@@ -37,7 +37,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link icon-news" href="#"><af:outputText value=" #{res.post}" id="post"/></a>
+                                <a class="nav-link icon-news" href="page/jobdetail.jspx"><af:outputText value=" #{res.post}" id="post"/></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link icon-contact" href="#"><af:outputText value=" #{res.contact}" id="contact"/></a>
