@@ -285,6 +285,41 @@ a:hover {
     vertical-align: middle;
 }
 
+.job_detail_three_apply_social_icon .icon-linkedin-company:before {
+    content: "\f0e1";
+    font-family: FontAwesome;
+    color: #ffffff;
+    text-align: center;
+}
+
+.job_detail_three_apply_social_icon .icon-facebook-company:before {
+    content: "\f09a";
+    font-family: FontAwesome;
+    color: #ffffff;
+    text-align: center;
+}
+
+.job_detail_three_apply_social_icon .icon-google-plus-company:before {
+    content: "\f0d5";
+    font-family: FontAwesome;
+    color: #ffffff;
+    text-align: center;
+}
+
+.job_detail_send_btn:before {
+    content: "\f003";
+    font-family: FontAwesome;
+    font-size: 1.125em;
+    font-weight: 100;
+}
+
+.icon_job_detail_link:before {
+    content: "\f0f6";
+    font-family: FontAwesome;
+    font-size: 1em;
+    font-weight: 100;
+}
+
 .form-control, .x2b1 {
     padding: 2px 5px !important;
     font-size: 0.875em !important;
@@ -395,9 +430,9 @@ header.masthead .overlay {
 .job-detail-content {
     border: 1px solid #ebeced;
     background-color: #ffffff;
-    padding: 29px 29px 20px 29px;
+    padding: 18px 18px 9px 18px;
     margin-bottom: 31px;
-    min-height: 1035px;
+    min-height: 1000px;
 }
 
 .job-detail-content-section {
@@ -474,7 +509,6 @@ header.masthead .overlay {
 
 .job-detail-content-title {
     width: 100%;
-    margin-bottom: 10px;
     text-align: left;
     background-color: White;
     padding: 10px !important;
@@ -692,7 +726,6 @@ header.masthead .overlay {
 .job-detail-similar ul li {
     list-style: none;
     line-height: 1;
-    padding-right: 90px;
     position: relative;
     margin-bottom: 24px;
 }
@@ -770,4 +803,73 @@ header.masthead .overlay {
     font-weight: 300;
     border-radius: 60px;
     vertical-align: middle;
+}
+
+.py-5, .x2ob {
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.3rem !important; 
+}
+
+.job_detail_three_apply_social_icon {
+    list-style: none;
+    padding: 0px !important;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.job_detail_three_apply_social_icon li {
+    display: inline-block;
+    padding: 0px 7px 10px 7px;
+    line-height: 1;
+}
+
+.job_detail_three_apply_social_icon li a {
+    font-size: 1.625em;
+    color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.job_detail_three_apply_social_icon li a.icon-facebook-company {
+    background-color: #3b5998;
+}
+
+.job_detail_three_apply_social_icon li a.icon-google-plus-company {
+    background-color: #fb353f;
+}
+
+.job_detail_three_apply_social_icon li a.icon-linkedin-company {
+    background-color: #007ab9;
+}
+
+.job_detail_contact_company {
+    width: 100%;
+    background-color: #53b427;
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    padding: 18px 10px;
+}
+
+.job_detail_contact_company a {
+    color: White;
+    font-weight: bold;
+    vertical-align: sub;
+}
+
+.job_detail_contact_company:hover {
+    color: White;
+    font-weight: bold;
+    background-color: #13b5ea;
+    cursor: pointer;
+    vertical-align: sub;
 }

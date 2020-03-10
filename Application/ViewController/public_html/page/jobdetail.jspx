@@ -96,7 +96,8 @@
                                      alt="img"/>
                                  
                                 <h5>
-                                    <strong>Larion Group Inc.</strong>
+                                    <a href="">
+                                        <strong>Larion Group Inc.</strong></a>
                                 </h5>
                                 <div class="company-rating">
                                     <span class="careerfy-company-rating-box width-eighty"></span>
@@ -143,8 +144,25 @@
                                     </li>
                                 </ul>
                                 <div class="job-detail-link">
-                                    <a href="#">Nộp Đơn</a>
+                                    <a href="#" class="icon_job_detail_link"> Nộp Đơn</a>
                                 </div>
+                                <div class="careerfy-applywith-title">
+                                    <small>Th&#244;ng tin c&#244;ng ty</small>
+                                </div>
+                                <ul class="job_detail_three_apply_social_icon">
+                                    <li>
+                                        <a href="#" class="icon-linkedin-company"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-facebook-company"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-google-plus-company"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="job_detail_contact_company">
+                                <a href="#" class="job_detail_send_btn"> Môi trường làm việc</a>
                             </div>
                             <div class="job-detail-candidate-detail-services">
                                 <ul>
@@ -270,17 +288,17 @@
                                 <!-- end Similar job -->
                             </div>
                         </div>
+                        
                         <div class="col-lg-8">
                             <div class="job-detail-content">
                                 <div class="job-detail-content-section">
                                     <h4>
-                                        <b>Nh&#226;n vi&#234;n Chăm s&#243;c kh&#225;ch h&#224;ng b&#225;n h&#224;ng qua
-                                           điện thoại</b>
+                                        <b>Mid-Senior Designer</b>
                                     </h4>
                                      
                                     <span>To&#224;n thời gian</span>
                                      
-                                    <strong>C&#244;ng Ty TNHH Tư Vấn V&#224; Ph&#225;t Triển Phần Mềm LARION.
+                                    <strong>Allied Group Inc.
                                         <small>Mới nhất</small></strong>
                                 </div>
                                 <div class="job-detail-content-title">
@@ -300,6 +318,18 @@
                                             <strong>Y&#234;u cầu chung</strong>
                                         </h5>
                                     </div>
+                                    <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
+                                       oh arrogantly vehement irresistibly fussy penguin insect additionally wow
+                                       absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
+                                       cassowary some parrot and much as goodness some froze the sullen much connected
+                                       bat wonderfully on instantaneously eel valiantly petted this along across
+                                       highhandedly much dog out the much alas evasively neutral lazy reset.</p>
+                                    <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
+                                       oh arrogantly vehement irresistibly fussy penguin insect additionally wow
+                                       absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
+                                       cassowary some parrot and much as goodness some froze the sullen much connected
+                                       bat wonderfully on instantaneously eel valiantly petted this along across
+                                       highhandedly much dog out the much alas evasively neutral lazy reset.</p>
                                     <p>Far much that one rank beheld bluebird after outside ignobly allegedly more when
                                        oh arrogantly vehement irresistibly fussy penguin insect additionally wow
                                        absolutely crud meretriciously hastily dalmatian a glowered inset one echidna
@@ -368,7 +398,7 @@
                                          
                                         <span class="icon-money"> $1.500 – $2.500</span>
                                          
-                                        <span class="icon-filter"> IT Phần mềm</span>
+                                        <span class="icon-filter"> Bất động sản</span>
                                          
                                         <span class="job-detail-feature">TO&#192;N THỜI GIAN</span>
                                     </div>
@@ -396,7 +426,7 @@
                                          
                                         <span class="icon-money"> $1.500 – $2.500</span>
                                          
-                                        <span class="icon-filter"> IT Phần mềm</span>
+                                        <span class="icon-filter"> Quảng c&#225;o - Truyền thông</span>
                                          
                                         <span class="job-detail-feature">TO&#192;N THỜI GIAN</span>
                                     </div>
@@ -406,121 +436,11 @@
                     </div>
                 </div>
             </div>
-            <footer id="careerfy-footer" class="careerfy-footer-one">
+            <footer class="py-5 bg-dark">
                 <div class="container">
-                    <!-- Footer Widget -->
-                    <div class="careerfy-footer-widget">
-                        <div class="row">
-                            <aside class="widget col-md-4 widget_contact_info">
-                                <div class="widget_contact_wrap">
-                                    <a class="careerfy-footer-logo" href="">
-                                        <img src="https://eyecix.com/html/careerfy/images/footer-logo.png" alt="img" /></a>
-                                    <p>Sed consequat sapien faus quam bibendum convallis quis in nulla. Pellentesque
-                                       volutpat odio eget diam cursus semper. Sed coquat sapien faucibus quam.</p>
-                                    <a href="#" class="careerfy-classic-btn careerfy-bgcolor">Learn more</a>
-                                </div>
-                            </aside>
-                             
-                            <aside class="widget col-md-3 widget_nav_manu">
-                                <div class="footer-widget-title">
-                                    <h2>Quick Links</h2>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#">Shortcodes</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Job Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Job Page Alternative</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Resume Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                             
-                            <aside class="widget col-md-3 widget_nav_manu">
-                                <div class="footer-widget-title">
-                                    <h2>For Candidates</h2>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#">Browse Jobs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Browse Categories</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Submit Resume</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Candidate Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Job Alerts</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">My Bookmarks</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                             
-                            <aside class="widget col-md-2 widget_nav_manu">
-                                <div class="footer-widget-title">
-                                    <h2>For Employers</h2>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#">Browse Candidates</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Employer Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Add Job</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Job Packages</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                    </div>
-                    <!-- Footer Widget -->
-                    <!-- CopyRight -->
-                    <div class="careerfy-copyright">
-                        <p>
-                            Copyrights &#169; 2020 All Rights Reserved by 
-                            <a href="#" class="careerfy-color">XXXX</a>
-                        </p>
-                        <ul class="careerfy-social-network">
-                            <li>
-                                <a href="#" class="careerfy-bgcolorhover fa fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="careerfy-bgcolorhover fa fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="careerfy-bgcolorhover fa fa-dribbble"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="careerfy-bgcolorhover fa fa-linkedin"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="careerfy-bgcolorhover fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- CopyRight -->
+                    <p class="m-0 text-center text-white">Copyright &#169; Your Website 2020</p>
                 </div>
+                <!-- /.container -->
             </footer>
             <af:resource type="javascript" source="${resource['js:jquery.min.js']}"></af:resource>
             <af:resource type="javascript" source="${resource['js:bootstrap.bundle.js']}"></af:resource>
